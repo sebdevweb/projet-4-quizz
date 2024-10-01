@@ -39,4 +39,8 @@ npm run build
 ## CREATE COMPONENTS
 1. Create new branch (CREATE-COMPONENTS)
 2. Create Quiz, Progress, Question, Components
-3. Create 
+
+## LINK INFORMATION BETWEEN COMPONENTS
+1. Create new branch (LINK-INFO-COMPONENTS)
+2. Create event (emits) on Question component
+3. Create event on Quiz component
