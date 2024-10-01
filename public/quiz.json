@@ -1,0 +1,78 @@
+{
+  "title": "Quizz sur les séries TV des années 2000",
+  "minimum_score": 4,
+  "success_message": "Félicitations !",
+  "failure_message": "Dommage ...",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quel épisode pilot est le plus cher de l'histoire de la télévision américaine ?",
+      "choices": ["Desperate housewives", "Heroes", "Lost", "Friends"],
+      "correct_answer": "Lost",
+      "explanation": "Cet épisode comprend l'accident d'avion qui est le point de départ de LOST. Le coût est estimé à 14 millions de dollars."
+    },
+    {
+      "id": 2,
+      "question": "Dans la série Malcolm, quels sont les prénoms des parents ?",
+      "choices": ["Craig et Piama", "Lois et Hal", "Kitty et Abe", "Ida et Stevie"],
+      "correct_answer": "Lois et Hal",
+      "explanation": "Ces parents sont magnifiquement interprétés pendant 7 ans par Jane Kaczmarek et Bryan Cranston."
+    },
+    {
+      "id": 3,
+      "question": "Dans la série Kyle XY, quelle est particularité du personnage de Kyle ?",
+      "choices": ["Il n'a pas de cheveux", "Il n'a que 4 doigts par main", "Ses 2 yeux ne sont pas de la même couleur", "Il n'a pas de nombril"],
+      "correct_answer": "Il n'a pas de nombril",
+      "explanation": "Cela s'explique car il est le fruit d’une expérimentation génétique, il n'a donc pas eu de cordon ombilical."
+    },
+    {
+      "id": 4,
+      "question": "Quel est le nom de famille de Joey dans la série Joey ?",
+      "choices": ["LeBlanc", "de Matteo", "Tribbiani", "Ricci"],
+      "correct_answer": "Tribbiani",
+      "explanation": "Cette série est la série dérivée de Friends, on y retrouve donc le personnage de Joey Tribbiani."
+    },
+    {
+      "id": 5,
+      "question": "Quelle série médicale est lancée en novembre 2004 pour 8 saisons ?",
+      "choices": ["Dr House", "Scrubs", "Nip/Tuck", "Grey's Anatomy"],
+      "correct_answer": "Dr House",
+      "explanation": "Ouais c'est ça."
+    },
+    {
+      "id": 6,
+      "question": "Quel acteur incarnait le personnage de Sylar, impitoyable et avide de pouvoir dans la série Heroes ?",
+      "choices": ["Masi Oka", "Milo Ventimiglia", "Zachary Quinto", "Matt Dallas"],
+      "correct_answer": "Zachary Quinto",
+      "explanation": "Ouais c'est ça."
+    },
+    {
+      "id": 7,
+      "question": "Dans quelle série, une étudiante nommée Sydney est espionne pour la CIA et doit jongler entre ses 2 vies ?",
+      "choices": ["Veronica Mars", "Ghost Whisperer", "Roswell", "Alias"],
+      "correct_answer": "Alias",
+      "explanation": "Ouais c'est ça."
+    },
+    {
+      "id": 8,
+      "question": "Quelle série met en avant les personnages de Christian Troy et Sean McNamara ?",
+      "choices": ["Nip / Tuck", "24", "Fringe", "Chuck"],
+      "correct_answer": "Nip / Tuck",
+      "explanation": "Ouais c'est ça."
+    },
+    {
+      "id": 9,
+      "question": "Dans quelle série Disney, le personnage principal voit l'avenir au travers de flashs ?",
+      "choices": ["Hannah Montana", "Lizzie McGuire", "Phenomène Raven", "Sabrina"],
+      "correct_answer": "Phenomène Raven",
+      "explanation": "Ouais c'est ça."
+    },
+    {
+      "id": 10,
+      "question": "Quelle actrice de la série Desperate Housewives a été élue Miss America en 1984 ?",
+      "choices": ["Teri Hatcher", "Vanessa Williams", "Kathryn Joosten", "Nicolette Sheridan"],
+      "correct_answer": "Vanessa Williams",
+      "explanation": "Ouais c'est ça."
+    }
+  ]
+}
