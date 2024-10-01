@@ -32,6 +32,11 @@ npm run build
 2. Clean source files, install sass-embedded dependencie
 
 ## FETCH DATA
-1. Create new branch
+1. Create new branch (FETCH-DATA)
 2. Create JSON file
 3. Fetch data json file in App vue
+
+## CREATE COMPONENTS
+1. Create new branch (CREATE-COMPONENTS)
+2. Create Quiz, Progress, Question, Components
+3. Create 
