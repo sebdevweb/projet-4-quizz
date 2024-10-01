@@ -1,13 +1,39 @@
-<script setup>
-  import { ref } from 'vue'
-
-  const title = ref('QUIZZ APP')
- 
-</script>
-
 <template>
-  <h1>{{ title }}</h1>
+  <div class="container">
+
+    <div v-if="state === 'error'">
+      <p>Impossible de charger le questionnaire</p>
+    </div>
+    <div :aria-busy="state === 'loading'">
+      {{ quiz }}
+    </div>
+  </div>
 </template>
+
+
+<script setup>
+  import { onMounted, ref } from 'vue'
+
+  const quiz = ref(null)
+  const state = ref('loading')
+
+  onMounted(() => {
+    fetch('/quiz.json')
+      .then( response => {
+        if (response.ok)  {
+          return response.json()
+        }
+        throw new Error('Impossible de récupérer le json')
+      })
+      .then(data => {
+        quiz.value = data
+        state.value = 'idle'
+      })
+      .catch(error => {
+        state.value = 'error'
+      })
+  })
+</script>
 
 <style lang="scss">
   body {

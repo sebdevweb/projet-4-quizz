@@ -30,3 +30,8 @@ npm run build
 
 1. Create Vue App and push to master branch
 2. Clean source files, install sass-embedded dependencie
+
+## FETCH DATA
+1. Create new branch
+2. Create JSON file
+3. Fetch data json file in App vue
