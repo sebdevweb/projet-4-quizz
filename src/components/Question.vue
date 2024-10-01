@@ -4,20 +4,26 @@
     <ul>
       <li v-for="(choice, index) in question.choices" :key="choice">
         <label :for="`answer${index}`">
-          <input type="radio" name="answer" :id="`answer${index}`">
+          <input :id="`answer${index}`" type="radio" name="answer" v-model="answer" :value="choice">
           {{ choice }}
         </label>
       </li>
     </ul>
-    <button>Question suivante</button>
+    {{ answer }}
+    <!-- Au click on passe le nom de l'événement 'answer' et la réponse choisie par l'utilisateur : answer -->
+    <button :disabled="!hasAnswer" @click="emits('answer', answer)">Question suivante</button>
   </div>
 </template>
 
 
 <script setup>
+  import { ref, computed } from 'vue'
   const props = defineProps({
     question: Object
   })
+  const emits = defineEmits(['answer'])
+  const answer = ref(null)
+  const hasAnswer = computed(() => answer.value !== null)
 </script>
 
 
