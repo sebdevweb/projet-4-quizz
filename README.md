@@ -44,3 +44,7 @@ npm run build
 1. Create new branch (LINK-INFO-COMPONENTS)
 2. Create event (emits) on Question component
 3. Create event on Quiz component
+
+## NAVIGATE INTO QUIZZ
+1. Create new branch (NAVIGATE-INTO-QUIZZ)
+2. Add navigation to next question
