@@ -50,3 +50,7 @@ npm run build
 2. Add navigation to next question
 3. Add Recap component
 4. Fixing displaying bug when first question is valided
+
+## SCORING RECAP
+1. Create new branch (SCORING-RECAP)
+2. 

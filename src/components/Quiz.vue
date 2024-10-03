@@ -6,8 +6,8 @@
     <!-- Ajoute un nouveau composant Question à la validation d'une réponse
       grâce à :key="question.question", cela permet de régler le bogue d'affichage lorsque la première réponse est validé -->
     <Question :question="question" :key="question.question" v-if="state === 'question'" @answer="addAnswer" />
-    <Recap v-if="state === 'recap'" />
-    {{ answers }}
+    <Recap v-if="state === 'recap'" :answers="answers" :quiz="quiz" />
+    <!-- {{ answers }} -->
   </div>
 </template>
 
