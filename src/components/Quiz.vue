@@ -2,7 +2,11 @@
   <div>
     <h1>{{ quiz.title }}</h1>
     <Progress :value="step" :max="quiz.questions.length - 1" />
-    <Question :question="question" v-if="state === 'question'" @answer="addAnswer" />
+
+    <!-- Ajoute un nouveau composant Question à la validation d'une réponse
+      grâce à :key="question.question", cela permet de régler le bogue d'affichage lorsque la première réponse est validé -->
+    <Question :question="question" :key="question.question" v-if="state === 'question'" @answer="addAnswer" />
+    <Recap v-if="state === 'recap'" />
     {{ answers }}
   </div>
 </template>
@@ -12,6 +16,7 @@
   import { ref, computed } from 'vue'
   import Progress from './Progress.vue'
   import Question from './Question.vue'
+  import Recap from './Recap.vue';
 
   const props = defineProps({
     quiz: Object

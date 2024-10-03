@@ -48,3 +48,5 @@ npm run build
 ## NAVIGATE INTO QUIZZ
 1. Create new branch (NAVIGATE-INTO-QUIZZ)
 2. Add navigation to next question
+3. Add Recap component
+4. Fixing displaying bug when first question is valided
