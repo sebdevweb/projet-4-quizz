@@ -17,13 +17,22 @@
 
 
 <script setup>
-  import { ref, computed } from 'vue'
+  import { ref, computed, watch } from 'vue'
   const props = defineProps({
     question: Object
   })
   const emits = defineEmits(['answer'])
   const answer = ref(null)
   const hasAnswer = computed(() => answer.value !== null)
+  
+  /* Méthode pour le bogue d'affichage lorsqu'une réponse est validé et que le bouton question suivante n'est pas disabled.
+  L'appel de la fonction watch est nécessaire dans ce cas précis.
+  L'autre solution est disponible dans le composant Quiz, en appelant le composant Question à chaque validation d'une réponse
+  */
+ 
+  // watch(() => props.question, () => {
+  //   answer.value = null
+  // })
 </script>
 
 
