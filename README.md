@@ -53,4 +53,10 @@ npm run build
 
 ## SCORING RECAP
 1. Create new branch (SCORING-RECAP)
-2. 
+
+## TECHNICAL DETAILS
+1. Create new branch (TECHNICAL-DETAILS)
+2. Randomize answers display
+3. Disabled radio input when user choose answer (optionnal)
+4. Add new component Answer
+5. UX/UI details
