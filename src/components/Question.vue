@@ -7,15 +7,16 @@
           :id="`answer${index}`" 
           :disabled="hasAnswer" 
           :value="choice"
-          v-model="answer"
+          @change="onAnswer"
           :correctAnswer="question.correct_answer"
+          v-model="answer"
         />
       </li>
     </ul>
     <!-- Au click on passe le nom de l'événement 'answer' et la réponse choisie par l'utilisateur : answer -->
     <div class="result">
-      <p :class="answer">{{ answer }}</p>
-      <button :disabled="!hasAnswer" @click="emits('answer', answer)">Question suivante</button>
+      <p>{{ answer }}</p>
+      <!-- <button @click="emits('answer', answer)">Question suivante</button> -->
     </div>
   </div>
 </template>
@@ -23,7 +24,7 @@
 
 <script setup>
   import { shuffleArray } from '@/functions/array'
-  import { ref, computed, watch } from 'vue'
+  import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
   import Answer from './Answer.vue';
   const props = defineProps({
     question: Object
@@ -43,6 +44,27 @@
   // watch(() => props.question, () => {
   //   answer.value = null
   // })
+
+  let timer
+
+  const onAnswer = () => {
+    // answer.value = e.currentTarget.value
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      emits('answer', answer.value)
+    }, 1_500)
+  }
+
+
+  onMounted(() => {
+    timer = setTimeout(() => {
+      answer.value = ''
+      onAnswer()
+    }, 4_000)
+  })
+  onUnmounted(() => {
+    clearTimeout(timer)
+  })
 </script>
 
 

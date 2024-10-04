@@ -60,3 +60,7 @@ npm run build
 3. Disabled radio input when user choose answer (optionnal)
 4. Add new component Answer
 5. UX/UI details
+
+## LAST FEATURES
+1. Create new branch (LAST-FEATURES)
+2. Add Timer
