@@ -1,7 +1,7 @@
 <template>
   <h2>Recap</h2>
-  <p>Votre score : <strong>{{ score }} / {{ quiz.questions.length }}</strong></p>
-  <p>{{ answers }}</p>
+  <p><strong>Votre score : </strong>{{ score }}/{{ quiz.questions.length }}</p>
+  <p><strong>Vos réponses : </strong><span>{{ answers }}</span></p>
   <p><strong>{{ hasWon ? quiz.success_message : quiz.failure_message }}</strong></p>
 </template>
 
@@ -29,5 +29,10 @@
 
 
 <style lang="scss">
-
+  p {
+    span {
+      font-style: italic;
+      color: grey;
+    }
+  }
 </style>

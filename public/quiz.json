@@ -1,8 +1,10 @@
 {
   "title": "Quizz sur les séries TV des années 2000",
   "minimum_score": 4,
-  "success_message": "Félicitations !",
-  "failure_message": "Dommage ...",
+  "success_message": "Félicitations ! Vous avez obtenue le score nécessaire !",
+  "failure_message": "Dommage, vous n'avez pas obtenue le score nécessaire ...",
+  "correct": "Réponse correcte !",
+  "incorrect": "Mauvaise réponse !",
   "questions": [
     {
       "question": "Quel épisode pilot est le plus cher de l'histoire de la télévision américaine ?",
